@@ -1,4 +1,6 @@
-all:
+all: rr-chapter.pdf
+
+rr-chapter.pdf: rr-chapter.tex rr-refs.bib
 	pdflatex rr-chapter.tex
 	bibtex rr-chapter
 	pdflatex rr-chapter.tex
